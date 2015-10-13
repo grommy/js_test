@@ -1,0 +1,17 @@
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<body>
+	<h1 id="title" onclick="complexFunc();"> 
+		HELLO start
+	</h1>
+</body>
+
+<script type="text/javascript">
+	function complexFunc(){
+		$("#title").html("Goodbye");
+		$("#title").click(function() {
+			$("#title").html("Hello");
+			$("#title").off("click");
+		});
+	};
+</script>
