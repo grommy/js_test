@@ -1,0 +1,25 @@
+/*define style of <body> section*/
+body{    
+         background: #F2F077;    /*paint background color*/
+        font-family: sans-serif;     /*define font-family*/
+}
+
+/*define parameters of <h1> element*/
+h1{
+    font-size: 30px;    /*define font-size*/
+    border: 1px solid black;    /*define border arround the text*/ 
+    margin-left: 20px;    /*define left margin*/
+}
+/*define <h1> style in case if width of browser window is bigger than 500px*/
+@media (min-width: 500px){
+    h1{
+        background: #90C3D4; /*define background color for text only*/
+        border: none;    /*disable frame arround the text*/
+    }
+}
+
+/*define parameters of <h1> element on hover*/
+h1:hover{
+    background: black;    /*change background to black on hover*/
+   color:white;    /*change font color to white on hover*/
+}

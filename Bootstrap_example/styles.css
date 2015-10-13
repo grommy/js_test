@@ -1,0 +1,26 @@
+/* If the window width is below 650px, set font-family to monospace, background to blackand text to green. This will result in a retro terminal style*/
+@media (max-width: 649px) {
+        h1 {	
+             font-family: monospace;	
+             background: black;	
+             color: green;	
+         }
+  }
+
+/* If the window width is between 650px and 999px, set font-family to serif, background to white and text to black. This will result in a style similar to the first website. */
+@media (min-width: 650px) {	
+        h1 {	
+             font-family: serif;	
+             background: white;	
+             color: black;	
+         }
+  }
+
+/* If the window width is at least 1000px, set font-family to sans-serif, background to gray and text to white. This will result in a modern style. */
+@media (min-width: 1000px) {
+        h1 {	
+             font-family: sans-serif;	
+             background: gray;	
+             color: white;	
+         }
+  }
