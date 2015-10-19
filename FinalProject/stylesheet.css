@@ -1,0 +1,21 @@
+body {
+  color: #222;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 2.5rem 1.25rem;
+}
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 137.5%;
+  }
+}
+
+p, ol, ul {
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+.colored {
+  background-color: #90C3D4;
+}
