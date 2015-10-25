@@ -1,77 +1,188 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="stylesheet.css" type="text/css"/> 
+		
+		<link 
+			rel="stylesheet" 
+			type="text/css" 
+			href="css/bootstrap.min.css"
+		/>
+		<link 
+			rel="stylesheet"  
+			type="text/css"
+			href="css/stylesheet.css"
+		/>
+		 
+	
+	<script src="js/myScripts.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
 	</head> 
 
     <title>
     	My activities
     </title>
 
-<body>
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <body>
 
-  	<b class="colored">
-  		My activities 
-  	</b> 
-  	<br>
-  	<br>
-		In this list <b>You </b>are going to see all my goals/activities, which I desperately pursue in my life:
-	</br>
-	<br>
-	<ul>
-		<li>Taking care of my parents</li> 
-		<li>Meeting with my girlfriend </li>
-		<li>Playing football</li>
-	  	<li>Learning programming</li> 
-	  	<li>Excersing peaceful meditations/joga </li>
-	  	<li>Just <b>Living my life!</b></li>
+<!-- navigation header. Check it out on small and wide screen -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
+          <span class="sr-only">
+            Toggle navigation
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+        <a class="navbar-brand" href="#">
+          Nick's Final Project page
+        </a>
+      </div>
+      <div class="collapse navbar-collapse main-navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	</ul>
-  
-	<a href="http://google.com">
-		<img 
-			src="fifa14.bmp"
-			width = "25%"/>
-	</a>
 
-	<br></br>
-
-	I am glad to have your feedback on this site (under construction yet) or via e-mail box: konisite.studio@gmail.com
-
-	<br></br>
-
-	<p>Cheers! </p>
-
-</body>
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<body>
-	<h1 id="title" onclick="complexFunc();"> 
-		HELLO start
-	</h1>
-</body>
-
-<script type="text/javascript">
-	function complexFunc(){
-		$("#title").html("Goodbye");
-		$("#title").click(function() {
-			$("#title").html("Hello");
-			$("#title").off("click");
+    <!-- Header. Try clicking on the links on the left -->
+    <div class="row">
+      <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="changeHead">
+            <a href="#">
+              Click One
+            </a>
+          </li>
+          <li class="changeHead">
+            <a href="#">
+              Click Two
+            </a>
+          </li>
+          <li class="changeHead">
+            <a href="#">
+              Click Three
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 id="mainText">
+              About me
+            </h1>
+            <p>
+              My work, my hoobbies, my achievements
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Script that changes Header -->
+    <script type="text/javascript">
+       $(".changeHead").click(function(){
+			document.getElementById("mainText").innerHTML = this.innerHTML;
 		});
-	};
-</script>
+    </script>
 
+    <!-- Main info -->
+   <div class="info">   	
+   
+	    <div class="row">
+	    	<div class="col-md-2">
+	    		
+	    	</div>
+	    
+		    <div class="col-md-10">
+			  	<b class="colored">
+			  		My activities 
+			  	</b> 
+			  	<br>
+			  	<br>
+					In this list <b>You </b>are going to see all my goals/activities, which I desperately pursue in my life:
+				</br>
+				<br>
+				<ul>
+					<li>Taking care of my parents</li> 
+					<li>Playing football</li>
+				  	<li>Learning programming</li> 
+				  	<li>Excersing peaceful meditations/joga </li>
+				  	<li>Just <b>Living my life!</b></li>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to Demo. London is the capital.</button>
+				</ul>
 
-<p id="demo"></p>
-<br>
-<a href="2.html">
-	2nd page
-</a>
+				<h3>My favourite websites</h3>
+			    
+			    <div class="row">
+
+			    	<div class="col-md-5">
+			    		
+							<a href="http://www.w3schools.com/">
+								
+									<img class="hobbyImg"
+										src="css/img/program.jpg"										
+									/>
+									
+							</a>
+							<br></br>
+						
+					</div>
+
+	    			<div class="col-md-5">
+						<a href="http://dynamo.kiev.ua">
+								
+									<img class="hobbyImg" 
+										src="css/img/football.jpg"										
+									/>
+								
+
+							</a>
+							<br></br>
+					</div>
+
+					
+
+				</div>
+
+				<br></br>
+
+				<!-- Check mailto link -->
+
+				I am glad to have your feedback via <a href="mailto: konisite.studio@gmail.com">e-mail.</a>
+
+				<br></br>
+
+				Is it too late?
+				<button  type="button" class="btn btn-primary" 
+					data-loading-text = "Loading..."
+					onclick="document.getElementById('time').innerHTML = Date()">
+					Check
+				</button> 	<text id="time"></text>
+
+				<br></br>
+
+				<div id="title" onclick="complexFunc();"> 
+					Goodbye click
+				</div>   
+
+		    </div>
+		</div>
+	</div>
+ 
+
+</body>
 
 	
 </html>
